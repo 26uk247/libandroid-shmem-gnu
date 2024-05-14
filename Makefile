@@ -1,7 +1,11 @@
 CFLAGS += -fpic -shared -std=c11 -Wall -Wextra -Wl,--version-script=exports.txt
 
+// libandroid-shmem.so: shmem.c shm.h
+//	$(CC) $(CFLAGS) $(LDFLAGS) shmem.c -llog -o $@
+
 libandroid-shmem.so: shmem.c shm.h
-	$(CC) $(CFLAGS) $(LDFLAGS) shmem.c -llog -o $@
+$(CC) $(CFLAGS) $(LDFLAGS) shmem.c -o $@
+
 
 gnulinux: shmem.c shm.h ashmem.h
 	$(CC) $(CFLAGS) -D_GNU_SOURCE -pthread $(LDFLAGS) shmem.c -o libandroid-shmem.so
