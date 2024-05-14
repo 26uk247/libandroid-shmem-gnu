@@ -26,4 +26,4 @@ How to build and use
 
 to use:
 
-? env LD_PRELOAD="/lib/libandroid-shmem.so" <linux_command_here>
+> env LD_PRELOAD="/lib/libandroid-shmem.so" <linux_command_here>
