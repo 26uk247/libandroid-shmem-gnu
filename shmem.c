@@ -1,3 +1,4 @@
+#define _GNU_SOURCE 1
 #include <errno.h>
 #include <pthread.h>
 #include <stdbool.h>
