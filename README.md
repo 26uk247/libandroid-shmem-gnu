@@ -16,11 +16,11 @@ I have been trying to find a way to run some Ham Radio apps (such as wsjtx) on a
 How to build and use
 ====================
 
-git clone https://github.com/26uk247/libandroid-shmem-gnu.git
-cd ./libandroid-shmem-gnu
-make
-cp ./libandroid-shmem.so /lib
+> git clone https://github.com/26uk247/libandroid-shmem-gnu.git
+> cd ./libandroid-shmem-gnu
+> make
+> cp ./libandroid-shmem.so /lib
 
 to use:
 
-env LD_PRELOAD="/lib/libandroid-shmem.so" <linux_command_here>
+? env LD_PRELOAD="/lib/libandroid-shmem.so" <linux_command_here>
