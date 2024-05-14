@@ -17,8 +17,11 @@ How to build and use
 ====================
 
 > git clone https://github.com/26uk247/libandroid-shmem-gnu.git
+
 > cd ./libandroid-shmem-gnu
+
 > make
+
 > cp ./libandroid-shmem.so /lib
 
 to use:
