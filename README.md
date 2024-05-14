@@ -4,11 +4,11 @@ System V shared memory (shmget, shmat, shmdt and shmctl) emulation on Android us
 
 The shared memory segments it creates will be automatically destroyed when the creating process destroys them or dies, which differs from the System V shared memory behaviour.
 
-Based on previous work in https://github.com/pelya/android-shmem, termux and vishalbiswas
+Based on previous work in https://github.com/pelya/android-shmem, [termux and vishalbiswas]https://github.com/termux/libandroid-shmem and https://github.com/vishalbiswas/libandroid-shmem-gnu
 
 
 My use case
 ===========
 
-I have been trying to find a way to run some Ham Radio apps (such as wsjtx) on a Linux chroot in Android using Linux Deploy for some time, but keep running into the "Shared Memory Error". I have been able to run x11vnc succesfully using this library (which was previously failing with an shmget error), but not yet wsjtx. 
+I have been trying to find a way to run some Ham Radio apps (such as wsjtx) on a Linux chroot in Android using Linux Deploy for some time, but keep running into the "Shared Memory Error". I have been able to run x11vnc succesfully using this library (which was previously failing with an shmget error).. but not yet wsjtx (which may use posix shared memory rather than system v?). 
 
