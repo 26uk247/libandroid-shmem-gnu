@@ -4,7 +4,7 @@ System V shared memory (shmget, shmat, shmdt and shmctl) emulation on Android us
 
 The shared memory segments it creates will be automatically destroyed when the creating process destroys them or dies, which differs from the System V shared memory behaviour.
 
-Based on previous work in https://github.com/pelya/android-shmem, [termux and vishalbiswas]https://github.com/termux/libandroid-shmem and https://github.com/vishalbiswas/libandroid-shmem-gnu
+Based on previous work in https://github.com/pelya/android-shmem, https://github.com/termux/libandroid-shmem and https://github.com/vishalbiswas/libandroid-shmem-gnu
 
 
 My use case
