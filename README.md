@@ -12,3 +12,15 @@ My use case
 
 I have been trying to find a way to run some Ham Radio apps (such as wsjtx) on a Linux chroot in Android using Linux Deploy for some time, but keep running into the "Shared Memory Error". I have been able to run x11vnc succesfully using this library (which was previously failing with an shmget error).. but not yet wsjtx (which may use posix shared memory rather than system v?). 
 
+
+How to build and use
+====================
+
+git clone https://github.com/26uk247/libandroid-shmem-gnu.git
+cd ./libandroid-shmem-gnu
+make
+cp ./libandroid-shmem.so /lib
+
+to use:
+
+env LD_PRELOAD="/lib/libandroid-shmem.so" <linux_command_here>
