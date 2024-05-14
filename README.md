@@ -16,6 +16,8 @@ I have been trying to find a way to run some Ham Radio apps (such as wsjtx) on a
 How to build and use
 ====================
 
+To install.... run these in your Linux chroot:
+
 > git clone https://github.com/26uk247/libandroid-shmem-gnu.git
 
 > cd ./libandroid-shmem-gnu
